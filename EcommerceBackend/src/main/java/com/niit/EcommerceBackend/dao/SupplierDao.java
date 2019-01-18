@@ -1,0 +1,17 @@
+package com.niit.EcommerceBackend.dao;
+
+import java.util.List;
+
+import com.niit.EcommerceBackend.model.Supplier;
+
+public interface SupplierDao {
+	public boolean addSupplier(Supplier supplier);
+
+	public boolean deleteSupplier(Supplier supplier);
+
+	public boolean updateSupplier(Supplier supplier);
+
+	public List<Supplier> listSuppliers();
+
+	public Supplier getSupplierbySupplierName(int supplierID);
+}
